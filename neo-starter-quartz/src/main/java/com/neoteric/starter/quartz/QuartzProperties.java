@@ -11,7 +11,6 @@ import org.springframework.util.StringUtils;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Optional;
 
 @ConfigurationProperties("neostarter.quartz")
 @Getter
@@ -26,7 +25,7 @@ public class QuartzProperties {
     /**
      * If enabled Quartz will always use RAMJobStore.
      */
-    private boolean forceRamJobStore = false;
+    private boolean forceRamJobStore;
 
     /**
      * Additional properties to add to Quartz.
